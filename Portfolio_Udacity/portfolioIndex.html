@@ -6,9 +6,10 @@
         <title>Markcus Wallace</title>
         
         <!-- 3rd party CSS for normalization -->
-        <link rel="stylesheet" type="text/css" href="file:///Users/Plague/Desktop/Portfolio_Udacity/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
-        
+        <!--Javascript file-->
+        <script type="text/javascript" src="/Portfolio_Udacity/JavascriptJS.js"></script>
         <!--3rd party CSS font -->
         <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
         
@@ -21,6 +22,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <img class="title-logo" src="http://placehold.it/100x100" class="img-responsive">
+
                 </div>
                 <div class="col-md-6 title text-right text-uppercase">
                     <h1 class="text-thin">Markcus Wallace</h1>
@@ -42,7 +44,18 @@
             
             <div class="row">
                 <div class="col-md-4 left">
-                    <img src="http://placehold.it/200x200" class="img-left" class="img-responsive">
+                    <img id="myImg1" src="file:///Users/Plague/Desktop/img_fjords.jpg" alt="Trolltunga, Norway" height="200" width="300">
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                    <!-- The Close Button  for the modal-->
+                    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01" src="http://placehold.it/500x500"> 
+
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                    </div>
+
                     <h3 class="caption-left">Appify</h3>
                     <p><a href="http://github.com/">Link to project</a></p>
                 </div>
